@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breworia Café</title>
+
+<style>
+body {margin:0;font-family:Arial;background:#fff3e6;text-align:center;}
+header {background:#4b2e2e;color:white;padding:20px;font-size:28px;}
+.container {padding:40px;}
+.item {background:white;padding:20px;border-radius:10px;display:inline-block;}
+img {width:250px;border-radius:10px;}
+.price {color:green;font-size:18px;}
+button {padding:12px 25px;background:#4b2e2e;color:white;border:none;cursor:pointer;}
+</style>
+</head>
+
+<body>
+
+<header>☕ Breworia Café</header>
+
+<div class="container">
+    <div class="item">
+        <img src="https://via.placeholder.com/250">
+        <h2>Cappuccino Delight</h2>
+        <p class="price">₹199</p>
+        <button onclick="orderNow()">Order Now</button>
+    </div>
+</div>
+
+<script>
+function orderNow(){
+    window.location.href = "order.html";
+}
+</script>
+
+</body>
+</html>
