@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order - Breworia Café</title>
+
+<style>
+body {font-family:Arial;background:#fff3e6;text-align:center;padding:50px;}
+.box {background:white;padding:30px;border-radius:10px;display:inline-block;}
+input, select {
+    display:block;
+    width:250px;
+    margin:10px auto;
+    padding:10px;
+}
+button {
+    padding:12px 25px;
+    background:#4b2e2e;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Place Your Order ☕</h2>
+
+<div class="box">
+    <form onsubmit="submitOrder(event)">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Item</option>
+            <option>Cappuccino</option>
+            <option>Cold Coffee</option>
+            <option>Latte</option>
+        </select>
+
+        <button type="submit">Confirm Order</button>
+    </form>
+</div>
+
+<script>
+function submitOrder(e){
+    e.preventDefault();
+    window.location.href = "thankyou.html";
+}
+</script>
+
+</body>
+</html>
